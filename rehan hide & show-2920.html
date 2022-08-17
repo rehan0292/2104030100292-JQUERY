@@ -1,0 +1,35 @@
+<!doctype.html>
+<html lang="en">
+  <head>
+    <meta charset="utf-9">
+ <title> example of jquery animated toggle effect</title>
+ <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+ <style>
+     p{
+        padding: 21px;
+        background:#FFC533;
+     }  
+ </style>
+    <script>
+      $(document).ready(function(){
+          // Toggles paragraphs with different speeds
+          $(".toggle-btn").click(function(){
+              $("p.slow").toggle();
+              $("p.normal").toggle("fast");
+              $("p.fast").toggle("slow");
+              $("p.very-slow").toggle(50);
+              $("p.very-fast").toggle(2000);
+          });
+      });
+      </script>
+ </head>
+   <body>
+      <button type-"button" class="toggle-btn"> hide! </button>
+      <button type-"button" class="toggle-btn"> show! </button>
+      <p class="slow">my name is rehan and am good boii!!!. </p>
+      <p class="normal">i am a student of silver oak university in bca.</p>
+      <p class="fast">i alos play a crcicket bcz my dream is ind:cricketer.</p>
+      <p class="very-slow">amm inspired by khabhib,cristiano,virat kholi.</p>
+      <p class="very-fast">and i am a strict muslim just train and allah thats my vision of success!.</p>
+   </body>
+</html>
